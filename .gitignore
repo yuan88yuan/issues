@@ -7,9 +7,19 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Node.js
+**/node_modules/
+
+# Pi
+.pi/sessions/
+
 # Temporary scripts
 *.tmp.sh
 tmp_*.sh
+
+# Logs and Caches
+*.log
+.ruff_cache/
 
 # 忽略所有 Obsidian 設定檔
 .obsidian/*
