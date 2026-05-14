@@ -1,7 +1,6 @@
 | ID | Title | Status | Priority | Project |
 |---|---|---|---|---|
 | 001 | support platform holoscan-cuda13-amd64 | open | M | qcap-sdk |
-| 003 | VCU Decoder Timestamp Handling Discrepancies | closed | M | qcap-sdk |
 | 005 | System Hang During Linux Kernel Initialization (Suspected FPGA Interaction) | in_progress | M | sc6f0-dante |
 | 006 | Enhanced Recovery Mode via Boot-Time GPIO Interaction (Button Combinations) | open | M | sc6f0-dante |
 | 007 | Dante Ultra TX Encoder IP Functionality Issue After ETH0 Up | open | M | sc6f0-dante |
@@ -12,4 +11,3 @@
 | 013 | 插拔 HDMI 或切解析度, Dante ultra 串流會不作用 | in_progress | M | sc6f0-dante |
 | 014 | MAC 修改 | open | M | sc6f0-dante |
 | 015 | Verify line-in/out using the ALSA driver | open | M | sc6f0-dante |
-| 016 | Test Issue | open | H | Test Project |

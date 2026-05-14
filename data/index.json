@@ -7,13 +7,6 @@
     "pj": "qcap-sdk"
   },
   {
-    "id": "003",
-    "t": "VCU Decoder Timestamp Handling Discrepancies",
-    "s": "closed",
-    "p": "M",
-    "pj": "qcap-sdk"
-  },
-  {
     "id": "005",
     "t": "System Hang During Linux Kernel Initialization (Suspected FPGA Interaction)",
     "s": "in_progress",
@@ -82,12 +75,5 @@
     "s": "open",
     "p": "M",
     "pj": "sc6f0-dante"
-  },
-  {
-    "id": "016",
-    "t": "Test Issue",
-    "s": "open",
-    "p": "H",
-    "pj": "Test Project"
   }
 ]
