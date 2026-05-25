@@ -75,5 +75,12 @@
     "s": "open",
     "p": "M",
     "pj": "sc6f0-dante"
+  },
+  {
+    "id": "016",
+    "t": "Add support to SDI RX/TX audio",
+    "s": "open",
+    "p": "M",
+    "pj": "sc6f0-n1-12gsdi"
   }
 ]
