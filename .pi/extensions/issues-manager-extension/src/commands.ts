@@ -13,7 +13,7 @@ export async function registerCommands(ctx: ExtensionCommandContext, issueServic
         return;
       }
 
-      const options = index.map(i => `${i.id} - ${i.t} [${i.s}]`);
+      const options = index.map(i => `${i.id} - ${i.t} [${i.s}] (${i.pj})`);
       const selected = await ctx.ui.select("Select an issue to view details or exit:", options);
       
       if (selected) {
