@@ -86,7 +86,7 @@
   {
     "id": "017",
     "t": "Use Pi coding agent to implementa file muxer for qcap-dev",
-    "s": "open",
+    "s": "closed",
     "p": "M",
     "pj": "qcap-dev"
   }
