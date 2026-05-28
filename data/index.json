@@ -102,11 +102,24 @@
     "id": "017",
     "t": "Xilinx Mixer DRM driver is not working with AB24 overlay",
     "s": "open",
-    "p": "H",
-    "pj": [
-      "sc6f0-sdi",
-      "qcap-dev"
+        "p": "M",
+        "pj": [
+          "sc6f0-sdi",
+          "qcap-dev"
+        ]
+      },
+      {
+        "id": "018",
+        "t": "Brainstorm about abstraction of ROS 2 system",
+        "s": "open",
+        "p": "M",
+        "pj": [
+          "qbot-dev"
+        ]
+      }
     ]
+  }
+]
   },
   {
     "id": "018",
