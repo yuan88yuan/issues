@@ -56,7 +56,46 @@ export class IssueService {
   async getIndex(): Promise<IssueIndex[]> {
     try {
       const data = await fs.readFile(this.indexFilePath, 'utf-8');
-      return JSON.parse(data);
+      const index = JSON.parse(data);
+      if (Array.isArray(index)) return this.sortIndex(index);
+    } catch (e) {
+      // Fall back to the issue files when the lightweight index is missing or
+      // corrupted. Commands like /issues:list should still work as long as
+      // ./data/issues/*.md exists.
+    }
+
+    return this.buildIndexFromIssueFiles();
+  }
+
+  private sortIndex(index: IssueIndex[]): IssueIndex[] {
+    return [...index].sort((a, b) => {
+      const numeric = Number(a.id) - Number(b.id);
+      return Number.isNaN(numeric) ? a.id.localeCompare(b.id) : numeric;
+    });
+  }
+
+  private async buildIndexFromIssueFiles(): Promise<IssueIndex[]> {
+    try {
+      const entries = await fs.readdir(this.issuesDir, { withFileTypes: true });
+      const issues: IssueIndex[] = [];
+
+      for (const entry of entries) {
+        if (!entry.isFile() || !entry.name.endsWith('.md')) continue;
+
+        const id = path.basename(entry.name, '.md');
+        const issue = await this.getIssueFile(id);
+        if (!issue) continue;
+
+        issues.push({
+          id,
+          t: issue.title || `Issue #${id}`,
+          s: issue.status || 'open',
+          p: issue.priority || 'M',
+          pj: issue.projects || [],
+        });
+      }
+
+      return this.sortIndex(issues);
     } catch (e) {
       return [];
     }
