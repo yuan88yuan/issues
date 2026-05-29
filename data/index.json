@@ -92,7 +92,7 @@
   {
     "id": "016",
     "t": "Add support to SDI RX/TX audio",
-    "s": "open",
+    "s": "closed",
     "p": "M",
     "pj": [
       "sc6f0-n1-12gsdi"
