@@ -90,15 +90,6 @@
     ]
   },
   {
-    "id": "016",
-    "t": "Add support to SDI RX/TX audio",
-    "s": "closed",
-    "p": "M",
-    "pj": [
-      "sc6f0-n1-12gsdi"
-    ]
-  },
-  {
     "id": "017",
     "t": "Xilinx Mixer DRM driver is not working with AB24 overlay",
     "s": "open",
@@ -115,15 +106,6 @@
     "p": "M",
     "pj": [
       "qbot-dev"
-    ]
-  },
-  {
-    "id": "019",
-    "t": "Audio drifting compensation algorithm for audio-sink-ALSA",
-    "s": "closed",
-    "p": "M",
-    "pj": [
-      "qcap-dev"
     ]
   }
 ]

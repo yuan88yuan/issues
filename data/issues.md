@@ -10,7 +10,5 @@
 | [013](./issues/013.md) | 插拔 HDMI 或切解析度, Dante ultra 串流會不作用 | in_progress | M | sc6f0-dante |
 | [014](./issues/014.md) | MAC 修改 | open | M | sc6f0-dante |
 | [015](./issues/015.md) | Verify line-in/out using the ALSA driver | open | M | sc6f0-dante |
-| [016](./issues/016.md) | Add support to SDI RX/TX audio | closed | M | sc6f0-n1-12gsdi |
 | [017](./issues/017.md) | Xilinx Mixer DRM driver is not working with AB24 overlay | open | M | sc6f0-sdi, qcap-dev |
 | [018](./issues/018.md) | Brainstorm about abstraction of ROS 2 system | open | M | qbot-dev |
-| [019](./issues/019.md) | Audio drifting compensation algorithm for audio-sink-ALSA | closed | M | qcap-dev |
