@@ -120,7 +120,7 @@
   {
     "id": "019",
     "t": "Audio drifting compensation algorithm for audio-sink-ALSA",
-    "s": "open",
+    "s": "closed",
     "p": "M",
     "pj": [
       "qcap-dev"
