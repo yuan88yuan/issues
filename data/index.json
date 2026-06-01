@@ -11,7 +11,7 @@
   {
     "id": "005",
     "t": "System Hang During Linux Kernel Initialization (Suspected FPGA Interaction)",
-    "s": "in_progress",
+    "s": "closed",
     "p": "M",
     "pj": [
       "sc6f0-dante"
